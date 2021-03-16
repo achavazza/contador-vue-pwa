@@ -13,6 +13,9 @@ const app = Vue.createApp({
         addCount(){
             this.count += 1;
         }, */
+        resetCount(){
+            this.count = 0;
+        },
         modCount(instruction = "add", limit = 1){
             if (instruction === "dis"){
                 this.count -= limit;
